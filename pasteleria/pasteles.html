@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <style>
+        body {
+            background-color: rgb(8, 153, 8);
+        }
+        
+        header {
+            background-color: darkgoldenrod;
+            height: 180px;
+            padding: 40px;
+            text-align: center;
+            font-size: 34px;
+            color: white;
+            margin: -1%;
+        }
+        
+        section {
+            padding: -1%;
+            margin: -1%;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+            width: 100%;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 120px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #4CAF50;
+        }
+        
+        .menu {
+            background-color: black;
+            position: relative;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            margin: 15%;
+        }
+        
+        .parrafo {
+            background-color: darkgoldenrod;
+            position: relative;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            margin-top: 0%;
+        }
+        
+        .imgs {
+            position: relative;
+            width: 250px;
+            height: 250px;
+        }
+        
+        .contenedor-imagenes {
+            display: flex;
+        }
+        
+        .contenedor-imagenes img:defined {
+            position: relative;
+            padding-left: 3%;
+            margin-right: 16%;
+        }
+        
+        .contenedor-seccion {
+            display: flex;
+            padding-left: 5%;
+        }
+        
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="/accion.js" id="form1" method="post">
+        <section>
+            <img align="right" src="PASTELES MAGICOS.PNG" width="250" height="250">
+        </section>
+
+        <header>
+            <h1>Viaja sin salir de casa</h1>
+        </header>
+
+        <section>
+            <ul>
+                <li><a class="active" href="#home">Ciente</a></li>
+                <li><a href="pastelero.html">Pastelero</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </section>
+        <br><br><br>
+        <div>
+            <b class="menu"><i>Sabores</i></b>
+            <h2 class="parrafo"><i>Elije los sabores que deseas</i></h2>
+        </div>
+
+        <div class="contenedor-imagenes">
+            <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6XPvavXwfiEGEPfTakSIygyLVhPs16FuETg&usqp=CAU">
+            <img class="imgs" src="https://regeneracion.mx/wp-content/uploads/2015/08/gansito01.jpg">
+            <img class="imgs" src="https://img-global.cpcdn.com/recipes/c00a986c44b44388/1200x630cq70/photo.jpg">
+        </div>
+
+        <div class="contenedor-seccion">
+            <input type="checkbox" id="sabor1" name="sabor1" value="Carlosv">
+            <label for="sabor1">"CARLOS V" $120</label><br>
+            <input type="checkbox" id="sabor2" name="sabor2" value="Gansito" style="margin-left:390px;">
+            <label for="sabor2">"GANSITO" $100</label><br>
+            <input type="checkbox" id="sabor3" name="sabor3" value="masapan" style="margin-left:390px;">
+            <label for="sabor3">"MASAPAN" $80</label><br><br>
+        </div>
+        <br><br><br>
+        <div>
+            <b class="menu"><i>Decoracines</i></b>
+            <h2 class="parrafo"><i>Cubiertas</i></h2>
+        </div>
+        <div class="contenedor-imagenes">
+            <img class="imgs" src="https://i.pinimg.com/236x/3c/62/2a/3c622a1f3ef0167f24e727ffceecf0da.jpg">
+            <img class="imgs" src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/como-hacer-crema-chantilly-sin-que-se-corte.jpg">
+            <img class="imgs" src="chocolate.jpg">
+        </div>
+
+        <div class="contenedor-seccion">
+            <input type="radio" id="fondant" name="cubiertas" value="fondant">
+            <label for="fondant">"Fondant" $150</label><br>
+            <input type="radio" id="chantilly" name="cubiertas" value="chantilly" style="margin-left:390px;">
+            <label for="chantilly">"Chantilly" $130</label><br>
+            <input type="radio" id="chocolate" name="cubiertas" value="chocolate" style="margin-left:390px;">
+            <label for="chocolate">"Chocolate" $100</label><br><br>
+        </div>
+        <br>
+
+        <h2 class="parrafo"><i>Toppings</i></h2>
+        <div class="contenedor-imagenes">
+            <img class="imgs" src="coco.jpg">
+            <img class="imgs" src="chocolatec.jpg">
+            <img class="imgs" src="frutos.jpg">
+        </div>
+        <div class="contenedor-seccion">
+            <input type="radio" id="fondant" name="cubiertas" value="fondant">
+            <label for="fondant">"Coco rallado" $80</label><br>
+            <input type="radio" id="chantilly" name="cubiertas" value="chantilly" style="margin-left:390px;">
+            <label for="chantilly">"Chispas de chocolate" $70</label><br>
+            <input type="radio" id="chocolate" name="cubiertas" value="chocolate" style="margin-left:390px;">
+            <label for="chocolate">"Frutos secos" $60</label><br><br>
+        </div>
+        <br><br>
+        <b class="menu"><i>Ingrediente mágico</i></b>
+        <h2 class="parrafo"><i>Esté ingrediente es opcinal</i></h2>
+        <h3 style="padding-left: 15%; margin: 0%;"><i>¿Quieres viajar?</i></h3>
+        <br><br>
+        <div style="padding-left: 4%;">
+            <input type="radio" id="magic" name="viaje" value="magic">
+            <label for="magic">"SI" $200</label>
+            <input type="radio" id="magic" name="viaje" value="magic" style="margin-left:300px;">
+            <label for="magic">"NO" sin costo extra</label><br>
+        </div>
+        <br><br><br><br>
+        <b class="menu"><i>Numero de personas</i></b>
+        <h2 class="parrafo"><i>El costo por persona es de $20</i></h2>
+        <div style="margin-left: 50%;">
+            <label for="numero1" style="background-color:chocolate;">¿Cuantas personas viajaran?</label><br>
+            <input type="number" id="numero1" name="numero1"><br><br>
+        </div>
+        <br><br><br>
+        <b class="menu"><i>Datos de contacto y dirección</i></b>
+        <br><br><br>
+        <label for="Input1" style="background-color:darkgoldenrod"> Nombre completo:</label>
+        <input type="text" id="Input1" name="Input1">
+        <br><br>
+        <label for="Input2" style="background-color:darkgoldenrod"> Dirección:</label>
+        <input type="text" id="Input2" name="Input2" style="margin-left: 52px;">
+        <br><br>
+        <label for="tel1" style="background-color:darkgoldenrod">Numero de telefono:</label>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+        <h2 style="background-color:darkgoldenrod">Fecha de entrega y hora de entrega</h2><br>
+        <input type="date" id="fecha1" name="fecha1"><br>
+        <input type="time" id="fecha4" name="fecha4"><br>
+        <br><br>
+        <input type="reset"><br>
+        <input type="submit" onclick="alert('Pedido enviado');"><br>
+    </form>
+    <br><br>
+    <br>
+    <div style="background-color: black; padding: 0%; margin: -1%;">
+        <h2 style="color: aliceblue; margin-left: 10px;">Contactanos en</h2> <br>
+        <p style="color: aliceblue; margin-left: 10px;">Avenida julion #231</p>
+        <p style="color: aliceblue; margin-left: 10px;">Whatsapp #2451642678</p>
+    </div>
+
+
+</body>
+
+</html>
